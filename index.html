@@ -1,126 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Julia Ferreiro</title>
+    <title>Calculadora de Binomios</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-</head>
-<body>
-    <div class="container">
-      <div class="left_Side">
-        <div class="textoPerfil">
-          <div class="img">
-            <img src="C:\Users\usuario\Documents\GitHub\CurriculumVitae\CurriculumVitae\src\assets\imagenes\1693325276760.jfif" alt="" width="250" height="270" class="imagen">
-          </div>
-          <h2>Julia Ferreiro <br><span>Desarrollo de Softeware</span> <i class="fa fa-star" aria-hidden="true"></i></h2>
-        </div>
-
-        <div class="contacto">
-          <h3 class="titulo"> Contact Info </h3>
-          <ul>
-            <li>
-              <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-              <span class="text">54 3548 63-8401</span>
-            </li>
-            <li>
-              <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-              <span class="text"> juliaferreiro235@gmail.com </span>
-            </li>
-            <li>
-              <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-              <span class="text">Nationality: Argentina.</span>
-            </li>
-            <li>
-              <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-              <span class="text"> <a href="https://ar.linkedin.com/in/julia-valentina-ferreiro-ab097b289"> Linkedin</a> </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="contactoEdu">
-          <h3 class="titulo"> Education </h3>
-          <ul>
-            <li>
-              <h5> 2019 - 2024 </h5>
-              <h4>Bachelor in Computer Science with specialized training in software. </h4>
-              <h4>Proa La Falda</h4>
-            </li>
-          </ul>
-        </div>
+    </head>
+    <body>
+    
+    <h2>Calculadora de cuadrados y cubos de un binomios</h2>
+    <div class="Ingresa_valor">
+        <label for="numeroA">Ingresa el valor de A:</label>
+        <input type="number" id="numeroA"><br>
         
-        <div class="contactoLang">
-          <h3 class="titulo"> Laguages </h3>
-          <ul>
-            <li>
-              <span class="text">English</span>
-              <span class="porcentaje"><div style="width: 60%;"></div></span>
-              
-            </li>
-            <li>
-              <span class="text">Spanish</span>
-              <span class="porcentaje"><div style="width: 100%;"></div></span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      <div class="right_Side">
-        <div class="about">
-          <h2 class="titulo2">Personal information</h2>
-          <p>Birthday: 04/14</p>
-
-          <p>Work experience: none</p>
-        </div>
-        <div class="about">
-          <h2 class="titulo2">Experiences</h2>
-          <div class="box">
-            
-              <p> <i class="fa fa-star" aria-hidden="true"></i> Olympics of history.</p>
-              <p> <i class="fa fa-star" aria-hidden="true"></i> Olympic of astronomy.</p>
-              <p> <i class="fa fa-star" aria-hidden="true"></i> CoderZ.</p>
-              <p> <i class="fa fa-star" aria-hidden="true"></i> Cybersecurity Conference.</p>
-              <p> <i class="fa fa-star" aria-hidden="true"></i> ISPC fullstack development course</p>
-              <p> <i class="fa fa-star" aria-hidden="true"></i> Scrum certification</p>
-
-          </div>
-        </div>
-
-        <div class="habilidades">
-          <h2 class="titulo2"> Skills</h2>
-          <div class="box">
-            <h4> HTML </h4>
-            <div class="percent"><div style="width: 70%;"></div></div>
-          </div>
-
-          <div class="box">
-            <h4> CSS </h4>
-            <div class="percent"><div style="width: 60%;"></div></div>
-          </div>
-
-          <div class="box">
-            <h4> Python </h4>
-            <div class="percent"><div style="width: 50%;"></div></div>
-          </div>
-
-          <div class="box">
-            <h4> Leadership   </h4>
-            <div class="percent"><div style="width: 80%;"></div></div>
-          </div>
-
-          <div class="box">
-            <h4> Math </h4>
-            <div class="percent"><div style="width: 87%;"></div></div>
-          </div>
-
-          
-
-
-        </div>
-      </div>
+        <label class="valorB" for="numeroB">Ingresa el valor de B:</label>
+        <input type="number" id="numeroB"> 
     </div>
-</body>
+    
+    <div class="container">
+        <p>¿Qué queres resolver?</p>
+        <input type="radio" id="cuadrado" name="operacion" value="cuadrado">
+        <label for="cuadrado">Cuadrado de un binomio</label><br>
+        <input type="radio" id="cubo" name="operacion" value="cubo">
+        <label for="cubo">Cubo de un binomio</label><br>
+    
+        <button onclick="calcular()">Calcular</button>
+    </div>
+    
+    
+    <p id="resultado"></p>
+
+    <h2> Calculadora de potencia de números imaginarios </h2>
+    
+    <div class="Ingresa_valor">
+        <label for="exponente">Ingresa el valor del exponente:</label>
+        <input type="number" id="exponente">
+        <button onclick="calcularpotencia()">Calcular</button>
+    </div>
+    
+
+ 
+
+    <p id="resultadopotencia"></p>
+    
+    <script src="script.js"></script>
+
+    </body>
+    </html>
