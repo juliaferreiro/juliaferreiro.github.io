@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Logaritmos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Logaritmos</h1>
+        <p class="explanation">
+            El <strong>logaritmo</strong> de un número responde a la pregunta: 
+            <em>¿A qué exponente (<span class="highlight-exponent">c</span>)</em> debemos elevar una 
+            <span class="highlight-base">base (<span class="highlight-blue">b</span>)</span> 
+            para obtener un <span class="highlight-result">número (<span class="highlight-red">a</span>)</span>? 
+            <br>
+            Matemáticamente: 
+            <span class="highlight-log">log<sub><span class="highlight-blue">b</span></sub>(<span class="highlight-red">a</span>) = <span class="highlight-exponent">c</span></span> 
+            <br>es equivalente a: 
+            <span class="highlight-power"><span class="highlight-blue">b</span><sup><span class="highlight-exponent">c</span></sup> = <span class="highlight-red">a</span></span>.
+        </p>
+
+        <label for="base">Base:</label>
+        <input type="number" id="base" placeholder="Ejemplo: 10">
+
+        <label for="logaritmando">Argumento:</label>
+        <input type="number" id="logaritmando" placeholder="Ejemplo: 100">
+
+        <button onclick="calcularLogaritmo()">Calcular</button>
+
+        <div class="result" id="resultado"></div>
+
+        <button onclick="irAPropiedades()" class="navigate-button">Resolver propiedades de logaritmos</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

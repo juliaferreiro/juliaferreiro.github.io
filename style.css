@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #0078d7;
+}
+
+.explanation {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.highlight-blue {
+    color: #0078d7;
+    font-weight: bold;
+}
+
+.highlight-red {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.highlight-exponent {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.highlight-log, .highlight-power {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+.navigate-button {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navigate-button:hover {
+    background-color: #218838;
+}

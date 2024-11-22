@@ -1,2 +1,1 @@
-# juliaferreiro.github.io
-Logaritmos
+# Logaritmos
